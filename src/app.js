@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 
-app.use('/users', userRoutes);
+app.use('/users', userRouters);
 
 app.listen(PORT, () => {
   console.log(`User Management Service running on port ${PORT}`);
